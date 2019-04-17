@@ -5,13 +5,16 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class MyDb extends SQLiteOpenHelper {
-    public MyDb(@androidx.annotation.Nullable Context context, @androidx.annotation.Nullable String name, @androidx.annotation.Nullable SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, factory, version);
+    public MyDb(Context context) {
+        super(context, "voting.db", null, 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
+        db.execSQL("create table users (username varchar(20) ,password varchar(20)) ;");
+        db.execSQL("insert into users values ('admin','123') ;");
+        db.execSQL("");
+        db.execSQL("");
     }
 
     @Override
