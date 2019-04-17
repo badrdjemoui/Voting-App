@@ -11,10 +11,10 @@ public class MyDb extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table users (username varchar(20) ,password varchar(20)) ;");
-        db.execSQL("insert into users values ('admin','123') ;");
-        db.execSQL("");
-        db.execSQL("");
+       db.execSQL("create table users (username varchar(20) ,password varchar(20)) ;");
+        db.execSQL("insert into users values ('badr','123') ;");
+        db.execSQL("create table artist(id number(2),name varchar(50),votes number(4));");
+        db.execSQL("create table voting(id number(2),mobile varchar(20));");
     }
 
     @Override
