@@ -29,8 +29,11 @@ public class MainActivity extends AppCompatActivity {
         if (cur.getCount()==0 )
             Toast.makeText(this,"uername or password is wrong",Toast.LENGTH_LONG).show();
         else
-            Toast.makeText(this,"uername and password is valide",Toast.LENGTH_LONG).show();
-
+          {
+            Toast.makeText(this, "uername and password is valide", Toast.LENGTH_LONG).show();
+            Intent i = new Intent(this, ProfileAct.class);
+            startActivity(i);
+            }
     }
 
 }
