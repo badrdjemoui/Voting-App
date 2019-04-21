@@ -1,7 +1,6 @@
 package com.example.programmingknowledge.votingapp;
 
-
-   import android.content.Context;
+import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
