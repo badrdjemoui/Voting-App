@@ -38,7 +38,7 @@ public class ChangePasswordAct extends AppCompatActivity {
 
         }
         else{
-            Toast.makeText(this,"the new password and their confirmation are not aqual",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"confirmation password does not match",Toast.LENGTH_LONG).show();
         }
 
     }
