@@ -1,10 +1,12 @@
-package com.example.programmingknowledge.votingapp;
+package com.example.programmingknowledge;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.programmingknowledge.votingapp.R;
 
 public class ProfileAct extends AppCompatActivity {
 TextView tv;

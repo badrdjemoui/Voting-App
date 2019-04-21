@@ -1,4 +1,4 @@
-package com.example.programmingknowledge.votingapp;
+package com.example.programmingknowledge;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.programmingknowledge.votingapp.R;
 
 public class MainActivity extends AppCompatActivity {
     EditText txtU,txtP;

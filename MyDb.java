@@ -1,4 +1,4 @@
-package com.example.programmingknowledge.votingapp;
+package com.example.programmingknowledge;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
