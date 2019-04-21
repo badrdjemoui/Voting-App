@@ -1,14 +1,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:orientation="horizontal"
-    android:gravity="center">
+    android:paddingRight="16dp">
 
     <!-- Include other widget or layout tags here. These are considered
             "child views" or "children" of the linear layout -->
-
 
 
     <EditText
@@ -16,9 +16,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:textSize="20dp"
-        android:textColor="red"
+        android:hint="welecome"
         android:inputType="textPersonName"
-        android:text="Name"
-        />
+        android:text="welecome"
+        android:textColor="red"
+        android:textSize="20dp"
+        tools:text="welecome" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="change password"
+        android:onClick="goToAct"/>
 </LinearLayout>
