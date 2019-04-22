@@ -7,8 +7,7 @@
     android:orientation="horizontal"
      android:background="#404040">
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+
         android:layout_width="110dp"
         android:layout_height="110dp"
         android:orientation="vertical">
@@ -18,29 +17,31 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/badr1" />
+        app:srcCompat="@drawable/badr1"
+        android:contentDescription="@string/todo" />
     </LinearLayout>
+
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="100dp"
+
         android:orientation="vertical">
         <TextView
             android:id="@+id/cond_id"
             android:layout_width="match_parent"
             android:layout_height="33dp"
-            android:text="TextView1" />
+            android:text="@string/_1" />
         <TextView
             android:id="@+id/cond_name"
             android:layout_width="match_parent"
             android:layout_height="33dp"
-            android:text="TextView2" />
+            android:text="@string/condidat1" />
         <TextView
             android:id="@+id/cond_vote"
             android:layout_width="match_parent"
             android:layout_height="33dp"
-            android:text="TextView3" />
+           android:text="@string/_0" />
 
     </LinearLayout>
 
