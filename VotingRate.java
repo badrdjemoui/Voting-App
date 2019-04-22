@@ -5,6 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.programmingknowledge.votingapp.R;
 
@@ -22,21 +23,25 @@ public class VotingRate extends AppCompatActivity {
         ListView lv = (ListView) findViewById(R.id.voting_liste);
         mdb=new MyDb(this);
         db=mdb.getReadableDatabase();
-        Cursor cur=db.rawQuery("select * from cond",null);
+        Cursor cur=db.rawQuery("select * from condidat",null);
         String[]ids=new String[cur.getCount()];
         String[]names=new String[cur.getCount()];
         String[]votes=new String[cur.getCount()];
         int x=0;
         cur.moveToFirst();
         while(cur.isAfterLast()==false){
+
             ids[x]=cur.getString(0);
-            ids[x]=cur.getString(1);
-            ids[x]=cur.getString(2);
+
+            names[x]=cur.getString(1);
+
+            votes[x]=cur.getString(2);
             x++;
             cur.moveToNext();
         };
-Fill_Row fr =new Fill_Row(this,R.layout.my_row,ids,names,votes,photos);
-lv.setAdapter(fr);
+            Toast.makeText(this, Integer.toString(photos[1]), Toast.LENGTH_LONG).show();
+            Fill_Row fr =new Fill_Row(this,R.layout.my_row,ids,names,votes,photos);
+            lv.setAdapter(fr);
 
 
 

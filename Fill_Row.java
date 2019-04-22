@@ -37,8 +37,12 @@ public class Fill_Row extends ArrayAdapter<String> {
         TextView tvID = (TextView) v.findViewById(R.id.cond_id);
         TextView name = (TextView) v.findViewById(R.id.cond_name);
         TextView vote = (TextView) v.findViewById(R.id.cond_vote);
-        ImageView photos = (ImageView) v.findViewById(R.id.cond_photo);
+        ImageView  iv = (ImageView) v.findViewById(R.id.cond_photo);
 
+        tvID.setText(ids[position]);
+        tvID.setText(names[position]);
+        tvID.setText(votes[position]);
+        iv.setImageResource(photos[position]);
        return v;
     }
 
