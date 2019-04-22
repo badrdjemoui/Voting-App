@@ -43,10 +43,7 @@
             android:text="TextView3" />
 
     </LinearLayout>
-    TextView tvID = (TextView) v.findViewById(R.id.cond_id);
-    TextView name = (TextView) v.findViewById(R.id.);
-    TextView vote = (TextView) v.findViewById(R.id.cond_vote);
-    ImageView photos = (ImageView) v.findViewById(R.id.cond_id);
+
 
 
 
