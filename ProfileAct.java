@@ -15,7 +15,7 @@ TextView tv;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         tv = (TextView) findViewById(R.id.tvWelcome);
-        tv.setText("welcome"+MyDb.username);
+        tv.setText("welcome  ".toUpperCase() +MyDb.username.toUpperCase());
     }
 
 public void goToAct(View v){

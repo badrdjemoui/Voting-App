@@ -27,16 +27,21 @@ public class MainActivity extends AppCompatActivity {
     public void login(View v){
       mdb =new MyDb(this) ;
       db=mdb.getReadableDatabase();
+
         Cursor cur = db.rawQuery("select * from users where username =? and password =?",
                 new String[]{txtU.getText().toString(),txtP.getText().toString()});
+
         if (cur.getCount()==0 )
             Toast.makeText(this,"uername or password is wrong",Toast.LENGTH_LONG).show();
         else
+
             {
-                MyDb.username=txtU.getText().toString();
-            Toast.makeText(this, "uername and password is valide", Toast.LENGTH_LONG).show();
+
+            MyDb.username=txtU.getText().toString();
+
             Intent i = new Intent(this, ProfileAct.class);
             startActivity(i);
+
             }
 
 

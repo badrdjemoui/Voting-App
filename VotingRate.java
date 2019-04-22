@@ -20,16 +20,21 @@ public class VotingRate extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_voting_rate);
 
-        ListView lv = (ListView) findViewById(R.id.voting_liste);
+        lv = (ListView) findViewById(R.id.voting_liste);
         mdb=new MyDb(this);
         db=mdb.getReadableDatabase();
         Cursor cur=db.rawQuery("select * from condidat",null);
+
         String[]ids=new String[cur.getCount()];
         String[]names=new String[cur.getCount()];
         String[]votes=new String[cur.getCount()];
+
         int x=0;
         cur.moveToFirst();
-        while(cur.isAfterLast()==false){
+
+        while(cur.isAfterLast()==false)
+
+        {
 
             ids[x]=cur.getString(0);
 
@@ -39,8 +44,8 @@ public class VotingRate extends AppCompatActivity {
             x++;
             cur.moveToNext();
         };
-            Toast.makeText(this, Integer.toString(photos[1]), Toast.LENGTH_LONG).show();
-            Fill_Row fr =new Fill_Row(this,R.layout.my_row,ids,names,votes,photos);
+
+           Fill_Row fr =new Fill_Row(this,R.layout.my_row,ids,names,votes,photos);
             lv.setAdapter(fr);
 
 
