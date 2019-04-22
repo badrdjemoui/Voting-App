@@ -40,8 +40,8 @@ public class Fill_Row extends ArrayAdapter<String> {
         ImageView  iv = (ImageView) v.findViewById(R.id.cond_photo);
 
         tvID.setText(ids[position]);
-        tvID.setText(names[position]);
-        tvID.setText(votes[position]);
+        name.setText(names[position]);
+        vote.setText(votes[position]);
         iv.setImageResource(photos[position]);
        return v;
     }
