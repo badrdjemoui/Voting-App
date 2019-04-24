@@ -30,5 +30,10 @@ public void goToAct(View v){
         Intent i = new Intent(this ,VotingRate.class);
         startActivity(i);
     }
+    if (v.getId()==R.id.button5)
+    {
+        Intent i = new Intent(this ,ResultAct.class);
+        startActivity(i);
+    }
     }
 }
