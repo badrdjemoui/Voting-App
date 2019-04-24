@@ -8,14 +8,19 @@
 
     <!-- Include other widget or layout tags here. These are considered
             "child views" or "children" of the linear layout -->
-
     <EditText
         android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="user" />
+        android:text="user"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
 
     <EditText
         android:id="@+id/password"
@@ -23,12 +28,25 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="...." />
+        android:text="...."
+
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
 
     <Button
         android:id="@+id/btnlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="login"
-        android:text="LOGIN" />
+        android:text="LOGIN"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
 </LinearLayout>

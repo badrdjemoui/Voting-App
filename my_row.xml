@@ -15,7 +15,7 @@
     <ImageView
         android:id="@+id/cond_photo"
         android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_height="110dp"
         android:layout_gravity="center"
         app:srcCompat="@drawable/badr1"
         android:contentDescription="@string/todo" />
@@ -24,7 +24,7 @@
     <LinearLayout
 
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="110dp"
 
         android:orientation="vertical">
         <TextView
