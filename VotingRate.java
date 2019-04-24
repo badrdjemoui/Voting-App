@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.programmingknowledge.votingapp.R;
+
 
 public class VotingRate extends AppCompatActivity {
 
@@ -45,7 +45,9 @@ public class VotingRate extends AppCompatActivity {
             cur.moveToNext();
         };
 
-           Fill_Row fr =new Fill_Row(this,R.layout.my_row,ids,names,votes,photos);
+//,R.layout.my_row second parametre in Fill_Row function
+
+           Fill_Row fr =new Fill_Row(this,ids,names,votes,photos);
             lv.setAdapter(fr);
 
 

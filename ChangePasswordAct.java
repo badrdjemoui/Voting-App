@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.programmingknowledge.votingapp.R;
+
 
 public class ChangePasswordAct extends AppCompatActivity {
 

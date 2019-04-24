@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.programmingknowledge.votingapp.R;
+
 
 public class ProfileAct extends AppCompatActivity {
 TextView tv;

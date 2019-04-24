@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-import com.example.programmingknowledge.votingapp.R;
+
 
 public class Fill_Row extends ArrayAdapter<String> {
 
@@ -20,8 +20,9 @@ public class Fill_Row extends ArrayAdapter<String> {
     String[] votes;
     Integer[] photos;
 
-    public Fill_Row(Activity context, int resource,String[] i,String[] n,String[] v,Integer[] p) {
-        super(context, R.layout.my_row);
+//, int resource  second parametre in Fill_Row consructor
+    public Fill_Row(Activity context,String[] i,String[] n,String[] v,Integer[] p) {
+        super(context, R.layout.my_row,i);
         this.context = context;
         ids = i;
         names=n;
