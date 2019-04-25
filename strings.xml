@@ -1,7 +1,15 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">VotingApp</string>
     <string name="_1">1</string>
+    <string name="hight_row">110dp</string>
     <string name="todo">TODO</string>
     <string name="condidat1">condidat1</string>
     <string name="_0">0</string>
+    <string name="show_voting_rate">show voting rate</string>
+    <string name="change_password">change password</string>
+    <string name="welecome" />
+    <string name="send_final_result">send final result</string>
+    <string name="result">result</string>
+
+
 </resources>

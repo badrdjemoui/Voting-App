@@ -9,12 +9,12 @@
     <!-- Include other widget or layout tags here. These are considered
             "child views" or "children" of the linear layout -->
     <EditText
-        android:id="@+id/txtresult"
+        android:id="@+id/txtResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="result"
+        android:text="@string/result"
 
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
@@ -22,17 +22,18 @@
         android:layout_marginRight="10dp"
         />
 
-
     <Button
-        android:id="@+id/btnlogin"
+        android:id="@+id/btnresult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="sendFR"
-        android:text="send final result"
+        android:text="@string/send_final_result"
 
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         />
+
+
 </LinearLayout>

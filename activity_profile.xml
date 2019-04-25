@@ -16,29 +16,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="welecome"
+        android:hint="@string/welecome"
         android:inputType="textPersonName"
-        android:text="welecome"
+        android:text="@string/welecome"
 
-        android:textSize="20dp"
-        tools:text="welecome" />
+        android:textSize="20sp"
+        tools:text="welecome"
+        android:importantForAutofill="no" tools:targetApi="o"/>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="change password"
+        android:text="@string/change_password"
         android:onClick="goToAct"/>
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="show voting rate"
+        android:text="@string/show_voting_rate"
         android:onClick="goToAct"/>
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="result"
+        android:text="@string/result"
         android:onClick="goToAct"/>
 </LinearLayout>

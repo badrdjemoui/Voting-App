@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ResultAct"></activity>
+        <activity android:name=".ResultAct"/>
         <activity android:name=".VotingRate" />
         <activity android:name=".ChangePasswordAct" />
         <activity android:name=".ProfileAct" />
@@ -26,7 +26,8 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".SMSReceiver">
+        <receiver android:name=".SMSReceiver"
+            android:permission="android.permission.BROADCAST_SMS">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
@@ -34,3 +35,4 @@
     </application>
 
 </manifest>
+

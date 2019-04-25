@@ -31,17 +31,20 @@
             android:id="@+id/cond_id"
             android:layout_width="match_parent"
             android:layout_height="33dp"
-            android:text="@string/_1" />
+            android:text="@string/_1"
+            android:textColor="#ffffff"/>
         <TextView
             android:id="@+id/cond_name"
             android:layout_width="match_parent"
             android:layout_height="33dp"
-            android:text="@string/condidat1" />
+            android:text="@string/condidat1"
+            android:textColor="#ffffff"/>
         <TextView
             android:id="@+id/cond_vote"
             android:layout_width="match_parent"
             android:layout_height="33dp"
-           android:text="@string/_0" />
+           android:text="@string/_0"
+            android:textColor="#ffffff"/>
 
     </LinearLayout>
 

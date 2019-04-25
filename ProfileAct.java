@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
+import android.widget.Toast;
 
 
 public class ProfileAct extends AppCompatActivity {
@@ -13,9 +13,12 @@ TextView tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_profile);
+
         tv = (TextView) findViewById(R.id.tvWelcome);
-        tv.setText("welcome  ".toUpperCase() +MyDb.username.toUpperCase());
+
+        tv.setText("welcome  ".toUpperCase() + MyDb.username.toUpperCase());
     }
 
 public void goToAct(View v){
@@ -30,10 +33,13 @@ public void goToAct(View v){
         Intent i = new Intent(this ,VotingRate.class);
         startActivity(i);
     }
-    if (v.getId()==R.id.button5)
+    if (v.getId()==R.id.button10)
     {
-        Intent i = new Intent(this ,ResultAct.class);
-        startActivity(i);
+
+       Intent i = new Intent(this ,ResultAct.class);
+
+       startActivity(i);
+
     }
     }
 }

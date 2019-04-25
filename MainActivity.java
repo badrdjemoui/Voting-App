@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
+
     EditText txtU,txtP;
     MyDb mdb;
     SQLiteDatabase db;

@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="user"
+        android:text="badr"
 
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="...."
+        android:text="123"
 
 
         android:layout_marginTop="10dp"
